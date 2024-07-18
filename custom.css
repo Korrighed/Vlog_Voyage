@@ -1,0 +1,106 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Pour éviter le défilement horizontal lors de l'ouverture de la nav */
+}
+
+.acceuil-section {
+  background: url('images/bg_header.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  transition: margin-left 0.3s; 
+}
+
+.acceuil-section.menu-open {
+  margin-left: 250px; /* Pousse la section lorsque le menu est ouvert */
+}
+
+.acceuil-section .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 50px;
+}
+
+.custom-card {
+  margin-top: -200px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.acceuil-section .btn {
+  margin: 5px;
+}
+
+.card.bg-transparent {
+  background-color: transparent;
+}
+
+.text-white .card-body h2, .text-white .card-body h1, .text-white .card-body p {
+  color: white !important;
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 24px; /* Réduit la longueur */
+  height: 4px; /* Épaissit les barres */
+  background-color: black;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  width: 24px; /* Réduit la longueur */
+  height: 4px; /* Épaissit les barres */
+  background-color: black;
+  position: absolute;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px; /* Réduit l'espacement */
+}
+
+.navbar-toggler-icon::after {
+  top: 8px; /* Réduit l'espacement */
+}
+
+.navbar-nav {
+  background-color: gray; /* Entièrement grise et opaque */
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Masquer la nav par défaut */
+  transition: left 0.3s;
+  z-index: 999;
+  padding-top: 60px; /* Pour éviter le chevauchement avec le logo */
+}
+
+.navbar-nav.open {
+  left: 0; /* Afficher la nav */
+}
+
+.nav-item {
+  border-bottom: 1px solid white; /* Ligne blanche entre les rubriques */
+}
+
+.nav-link {
+  padding: 15px;
+  font-size: 1.2em;
+  color: white; /* Texte blanc */
+  text-align: center; /* Texte centré */
+}
