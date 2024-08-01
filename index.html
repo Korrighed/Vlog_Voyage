@@ -2,143 +2,274 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Challenge bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="custom.css" rel="stylesheet">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="custom.css" rel="stylesheet" />
+    <!--- Liens Bootsrtap pour la library d'icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
+    <!-- Section d'accueil -->
+    <header>
+        <div class="acceuil-section">
+            <div class="row">
 
-    <!--Section d'acceuil*********************************************************************************-->
-<div class="row">
-    <header class="acceuil-section">
-            <div class="container text-center text-white>
-            <img src=" images/your_logo.png" alt="Logo du site" class="logo">
+                <!-- Offcanvas Sidebar -->
+                <div class="col-1">
+                    <div class="offcanvas offcanvas-start bg-dark" style="width: 200px" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Features</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">About me</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">My Blog</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">My History</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Look my Photos</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Get in Touch!</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="#">Download</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <!-- Menu Burger-->
-                <button class="navbar-toggler" type="button" id="navbarToggle">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--Nav Menu-->
-                <ul class="navbar-nav" id="navbarNav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">My Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">My History</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Look my Photos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Get in Touch!</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Download</a>
-                    </li>
-                </ul>
-
-
-                <!-- Card qui contient le titre-->
-                <div class="card bg-transparent border-0 custom-card text-white">
+            <!-- Title card-->
+            <div class="col-6">
+                <!-- Logo space -->
+                <img src="images/your_logo.png" alt="Logo du site" class="logo mb-3" />
+                <div class="card bg-transparent border-0 custom-card text-white bg-opacity-0">
                     <div class="card-body text-center">
                         <h2 class="card-subtitle">In the hall of the</h2>
                         <h1 class="card-title font-weight-bold">Mountain King</h1>
-                        <p class="card-text justify-content-center"> This is a simple hero unit, a simple
-                            jumbotron-style
-                            <br>
-                            component for calling extra attention to featured content or information.
+                        <p class="card-text justify-content-center">
+                            This is a simple hero unit, a simple jumbotron-style
+                            component for calling extra attention to featured content or
+                            information.
                         </p>
                         <a href="#" class="btn btn-info text-white">Learn more</a>
                         <a href="#" class="btn btn-danger">Download</a>
                     </div>
                 </div>
             </div>
+            <!-- Burger Button -->
+            <button class="navbar-toggler custom-toggler position-absolute top-0 end-0 m-10" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
         </div>
     </header>
-</div>
-
 
     <!--Section features*********************************************************************************-->
-    <div class="row">
-        <div class="col-md">
-            <div class="card bg-white custom-card text-center text-grey">
+    <div class="row ">
+        <div class="col-sm-4">
+            <div class="card bg-white border-0 text-center text-grey m-5 p-3">
+                <i class="bi bi-pencil" style="font-size: 2rem"></i>
                 <h3 class="text-center bold">Cosnsectetur Risus</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio et
-                    ea quis a quos ipsum maxime natus officia quaerat deserunt, nostrum
-                    autem repudiandae laboriosam corrupti laudantium libero expedita
-                    nobis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio
+                    et ea quis a quos ipsum maxime natus officia quaerat deserunt,
+                    nostrum autem repudiandae laboriosam corrupti laudantium libero
+                    expedita nobis.
                 </p>
             </div>
         </div>
-        <div class="col-md">
-            <div class="card bg-white custom-card text-center text-grey">
+        <div class="col-sm-4">
+            <div class="card bg-white border-0 text-center text-grey text-grey m-5 p-3">
+                <i class="bi bi-camera" style="font-size: 2rem"></i>
                 <h3>Ultricies Aenean</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio et
-                    ea quis a quos ipsum maxime natus officia quaerat deserunt, nostrum
-                    autem repudiandae laboriosam corrupti laudantium libero expedita
-                    nobis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio
+                    et ea quis a quos ipsum maxime natus officia quaerat deserunt,
+                    nostrum autem repudiandae laboriosam corrupti laudantium libero
+                    expedita nobis.
                 </p>
             </div>
         </div>
-        <div class="col-md">
-            <div class="card bg-white custom-card text-center text-grey">
+        <div class="col-sm-4">
+            <div class="card bg-white border-0 text-center text-grey text-grey m-5 p-3">
+                <i class="bi bi-bookmark" style="font-size: 2rem"></i>
                 <h3>Cras Sollicitudin</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio et
-                    ea quis a quos ipsum maxime natus officia quaerat deserunt, nostrum
-                    autem repudiandae laboriosam corrupti laudantium libero expedita
-                    nobis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio
+                    et ea quis a quos ipsum maxime natus officia quaerat deserunt,
+                    nostrum autem repudiandae laboriosam corrupti laudantium libero
+                    expedita nobis.
                 </p>
             </div>
         </div>
     </div>
     <!--Section About*********************************************************************************-->
-    <div class="about">
-        <h3>Ligula fdsljudsgfo grezg fdgsfsgsd</h3>
-        <h4>Lfrezdij pidfjsqplqds pfdqposhfdqspojfdsq</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis
-            ipsa assumenda autem expedita similique ipsam incidunt eos rem. Culpa
-            quos ipsum autem, delectus voluptates assumenda animi. Temporibus, odit
-            iure.
-        </p>
-        <div>Ultricies 23,578</div>
-        <div>Fermentum 12,702</div>
+    <div class="row about-section">
+        <div class="col-6"></div>
+        <div class="col card squared-card border-0 text-white bg-info bg-opacity-50 px-5 py-5 ">
+            <h3 class="card-title pt-5">Ligula Mattis Ornare <br>Ultricies</h3><br>
+            <h4>Pellentesque Cursus Amet Parturient Etiam</h4><br>
+            <h5 class="card-text">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Donec id elit non mi porta gravida at eget metus.
+                Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </h5>
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3 card squared-card border-1 border-white text-center text-white bg-info bg-opacity-50 my-3 p-2">
+                        <br><h3>Ultricies</h3><br><br><br>
+                        <H2 class="pb-3">23,578</H2>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3 card squared-card border-1 border-white text-center text-white bg-info bg-opacity-50 my-3 p-2">
+                        <br><h3>Fermentum</h3><br><br><br>
+                        <H2 class="pb-3">12,702</H2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
     </div>
-    <div class="blog"></div>
-    <div class="history"></div>
-    <div class="photos"></div>
-    <div class="partenaires"></div>
-    <div class="contact"></div>
-    <footer></footer>
+    <!--Section voyage*********************************************************************************-->
+    <div class="row ">
+        <div class="col-2"></div>
+        <div class="col-6">
+            <div class="card border-0 text-black bg-white m-4 ms-5">
+                <h1 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                <p class="card-text">
+                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+                    eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                    Donec sed odio dui. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula
+                    ut id elit.
+                    Etiam porta sem malesuada magna mollis euismod.<br><br>
 
+                    Donec id elit non mi porta gravida at eget metus.
+                    Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus
+                    posuere velit aliquet.
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    sit amet risus.
+                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra
+                    augue.
+                </p>
+                <a href="#" class="btn w-25 btn-danger text-white">Take a look <i class="bi bi-arrow-right-circle"
+                        style="font-size: 1rem"></i></a>
+            </div>
+        </div>
+        <div class="col-3 about-voyage m-4"></div>
+    </div>
+    <!--Section Camera*********************************************************************************-->
+    <div class="row about-camera">
+        <div class="col-2"></div>
+        <div class="col-4">
+            <div class="card squared-card border-0 text-white bg-info bg-opacity-50 m-0 mb-0 p-5">
+                <h5 class="card-title"><i>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere
+                        velit aliquet.
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</i></h5>
+                <p class="card-text"><i>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel
+                        scelerisque nisl consectetur et.</I></p>
+                <h5 class="card-title"> –Fermentum Dapibus <br> <br> </h5>
+                <p class="card-text">Nibh Etiam Risus Bibendum <br>
+                    Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Section galerie*********************************************************************************-->
+    <div class="row bg-dark-subtle">
+        <div class="row mt-5">
+            <div class="col-2"></div>
+                <div class="col-4 w-50">
+                    <img  src="images\300.jpeg" class="mb-3 w-100" alt="speaker"/> 
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images\800.jpeg" class="mb-3 w-100" alt="bridge"/>
+                            </div>
+                            <div class="col-3 w-50">
+                                <img  src="images\400.jpeg" class="mb-3 w-100" alt="person"/> 
+                                <img  src="images\2476.jpeg" class="mb-3 w-100" alt="camera"/> 
+                            </div>
+                        </div>
+                    <img src="images\140.jpeg" class="mb-3 w-100" alt="Motel"/>
+                </div>
+            <div class="col-3 w-25">
+                <img  src="images\776.jpeg" class="mb-3 h-75" alt="Mountain"/> 
+                <img  src="images/439.jpeg" class="mh-75 w-100" alt="crashed plane"/> 
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <!--Section logo *********************************************************************************-->
+    <div class="row bg-white">
+        <div class="col-1"></div>
+        <div class="row mt-2 ms-5">
+            <div class="col-2">
+                    <img  src="images\logo-sample-01.jpg" class="img-thumbnail border-0" alt="logo avantage"/> 
+                </div>
+                <div class="col-2 w-2">
+                    <img  src="images\logo-sample-02.jpg" class="img-thumbnail border-0"/> 
+                </div>
+                <div class="col-2">
+                    <img  src="images\logo-sample-03.png" class="img-thumbnail border-0"/> 
+                </div>
+                <div class="col-2">
+                    <img  src="images\logo-sample-04.jpg" class="img-thumbnail border-0"/> 
+                </div>
+                <div class="col-2">
+                    <img  src="images\logo-sample-05.jpg" class="img-thumbnail border-0"/> 
+                </div>
+                <div class="col-2 w-20">
+                    <img  src="images\logo-sample-06.png" class="img-thumbnail border-0"/> 
+                </div>
+            </div>
+        <div class="col-1"></div>
+    </div>
+
+    <!--Section News *********************************************************************************-->
+    <div class="row about-newsleter" style="--bs-bg-opacity: .75;">
+            <div class="col-1"></div>
+            <div class=" col-6 border-0 bg-transparent text-white m-4 ms-5">
+                <h1 class="card-title">Maecenas sed diam eget risus varius blandit sit amet non magna.</h1>
+                <p class="card-text">
+                    Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. 
+                    Cras mattis consectetur purus sit amet fermentum. 
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et. 
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                </p>
+                <input type="email" class="form-control mb-2 w-25" aria-describedby="emailHelp" placeholder="Your Email Here...">
+                <a href="#" class="btn w-25 btn-danger text-white">Submit Newsletter</a>
+            </div>    
+    </div>
+
+    <footer>
+        <div class="row bg-dark text-white">
+            <div class="col-2"></div>
+            <div class="col-4 mt-5 mb-3"><h1>Your Logo</h1><br><br>
+                <p>© 2016 Your Company. Designed and Developed by <span class="text-info">The Maitre jet d'ail</span></p>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-2 mt-5 pt-5 pe-2 ">
+                <i class="bi bi-facebook " style="font-size: 1.5rem; color: cornflowerblue"></i>
+                <i class="bi bi-twitter " style="font-size: 1.5rem; color: cornflowerblue"></i>
+                <i class="bi bi-c-circle" style="font-size: 1.5rem"></i>
+                <i class="bi bi-github" style="font-size: 1.5rem"></i>
+                <i class="bi bi-c-circle" style="font-size: 1.5rem"></i>
+            </div>
+        </div> 
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-    <script>
-        document.getElementById('navbarToggle').addEventListener('click', function () {
-            document.getElementById('navbarNav').classList.toggle('open');
-            document.querySelector('.acceuil-section').classList.toggle('menu-open');
-        });
-    </script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 
