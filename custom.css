@@ -1,6 +1,11 @@
 /* Utilitaire *****************/
-.squared-card{
+.squared-card {
   border-radius: 0%;
+}
+
+@font-face {
+  font-family: glyphicons-regular;
+  src: url(fonts/glyphicons-halflings-regular.woff)
 }
 
 /* Utilitaire *****************/
@@ -16,14 +21,12 @@
 .acceuil-section {
   background: url("images/bg_header.jpg") no-repeat center center/cover;
   background-color: grey;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
 }
-
-
 
 .acceuil-section .logo {
   position: absolute;
@@ -37,34 +40,28 @@
   /* Ajustez cette valeur selon vos besoins */
 }
 
-
 /* about section  **************************/
-.about-section{
+.about-section {
   background: url("images/bg_nuage.jpg") no-repeat center center/cover;
   height: 70vh;
 }
 
-
-
 /*Section voyage**************************/
-
-.about-voyage{
+.about-voyage {
   background: url("images/1200.jpeg") no-repeat center center/cover;
   height: 50vh;
-  
 }
 
 /* section camera **************************/
-
-.about-camera{
+.about-camera {
   background: url("images/bg_appareil_photo.jpg") no-repeat center center/cover;
   height: 100%;
   width: 100%;
 }
 
 /* section newsleter **************************/
-.about-newsleter{
+.about-newsleter {
   background: url("images/bg_newsletter.jpg") no-repeat center center/cover;
-  height: 50-vh;
-  /* filter: blur(8px); */
+  height: 40vh;
+  backdrop-filter: blur(50px);
 }
