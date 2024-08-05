@@ -41,26 +41,26 @@
 }
 
 /* about section  **************************/
-.about-section {
+.about {
   background: url("images/bg_nuage.jpg") no-repeat center center/cover;
   height: 70vh;
 }
 
 /*Section voyage**************************/
-.about-voyage {
+.blog {
   background: url("images/1200.jpeg") no-repeat center center/cover;
   height: 50vh;
 }
 
-/* section camera **************************/
-.about-camera {
+/* section history **************************/
+.history {
   background: url("images/bg_appareil_photo.jpg") no-repeat center center/cover;
   height: 100%;
   width: 100%;
 }
 
 /* section newsleter **************************/
-.about-newsleter {
+.contact {
   background: url("images/bg_newsletter.jpg") no-repeat center center/cover;
   height: 40vh;
   backdrop-filter: blur(50px);
